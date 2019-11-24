@@ -1,0 +1,38 @@
+{
+  "name": "front_end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rm -rf src/configs/index.js && cp src/configs/index.dev.js src/configs/index.js && node server.js",
+    "build_dev": "rm -rf src/configs/index.js && cp src/configs/index.dev.js src/configs/index.js &&./node_modules/.bin/next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "axios": "^0.19.0",
+    "bignumber.js": "^9.0.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "final-form": "^4.13.1",
+    "i18n-js": "https://github.com/fnando/i18n-js/tarball/v3.0.0",
+    "lottie-web": "^5.5.4",
+    "moment": "^2.24.0",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-final-form": "^6.0.1",
+    "react-google-recaptcha": "^2.0.0-rc.1",
+    "react-modal": "^3.8.1",
+    "react-redux": "^7.0.3",
+    "react-slick": "^0.25.2",
+    "react-toastify": "^5.2.1",
+    "redux": "^4.0.1",
+    "redux-actions": "^2.6.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-persist": "^5.10.0",
+    "validate.js": "^0.12.0"
+  }
+}

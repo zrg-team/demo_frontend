@@ -1,0 +1,64 @@
+.custom-select {
+    flex: 1;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-family: Arial;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.12);
+  }
+  
+  .select-selected {
+    height: 100%;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+
+  .select-selected-open {
+    border-radius: 4px 4px 0 0 !important;
+  }
+
+  .select-selected > div{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 30px;
+  }
+  
+  .select-selected.select-arrow-active:after {
+    border-color: transparent;
+    top: 7px;
+  }
+  
+  .select-items div,.select-selected {
+    color: #808080;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .select-items {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 990;
+    border-top: transparent;
+    box-shadow: 0 3px 4px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 0 0 4px 4px
+  }
+  
+  .select-show {
+    visibility: visible;
+    transition: all 0.4s;
+    opacity: 1; 
+  }
+
+  .select-hide {
+    visibility: hidden;
+    transition: all 0.4s;
+    opacity: 0; 
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }

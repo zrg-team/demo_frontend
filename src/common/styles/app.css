@@ -1,0 +1,90 @@
+.loading-container {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.loading-inner {
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.dialog-with-tabs#apply-job-dialog {
+  padding: 0;
+  color: #666;
+  max-width: 540px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.25);
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 4;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  padding: 0
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  position: relative;
+  appearance: none;
+  width: 35px;
+  height: 25px;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.15)
+}
+
+.slider::-webkit-slider-thumb::after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  height: 10px;
+  width: 10px;
+}
+.slider::-moz-range-thumb {
+  width: 35px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #fff; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 2px;
+
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 2000ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}
