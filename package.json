@@ -20,7 +20,7 @@
     "i18n-js": "https://github.com/fnando/i18n-js/tarball/v3.0.0",
     "lottie-web": "^5.5.4",
     "moment": "^2.24.0",
-    "next": "^8.1.0",
+    "next": "^9.3.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-final-form": "^6.0.1",
